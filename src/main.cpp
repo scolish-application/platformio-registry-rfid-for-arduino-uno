@@ -6,9 +6,9 @@
 #define RST_PIN 22  // Define o pino de Reset do MFRC522
 MFRC522 rfid(SS_PIN, RST_PIN);
 
-const char* ssid = "your-SSID";  // Nome da rede Wi-Fi
-const char* password = "your-PASSWORD";  // Senha da rede Wi-Fi
-const char* serverBaseUrl = "http://your-server.com/api";  // URL base do servidor
+const char* ssid = "Familia Dias";
+const char* password = "Leao.2006";
+const char* serverBaseUrl = "http://localhost:8080/api/registry";
 
 // Variável global para armazenar o cookie de autenticação
 String authCookie = "";
