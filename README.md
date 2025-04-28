@@ -9,14 +9,6 @@
 | RST          | GPIO22 (D22) | Reset do leitor RFID                   |
 | 3.3V         | 3V3          | Alimentação (3.3V)                     |
 
-| Item            | Configuração       | Função                                  |
-|:----------------|:-------------------|:----------------------------------------|
-| Biblioteca Wi-Fi| `WiFi.h`            | Gerenciamento da conexão Wi-Fi         |
-| Biblioteca HTTP | `HTTPClient.h`      | Requisições HTTP para o servidor       |
-| SSID            | `your-SSID`         | Nome da rede Wi-Fi                     |
-| Password        | `your-PASSWORD`     | Senha da rede Wi-Fi                    |
-| Server URL      | `http://your-server.com/api` | Base para chamadas REST API  |
-
 | Pino Buzzer | Pino ESP32  | Função                                  |
 |:------------|:------------|:----------------------------------------|
 | Buzzer +    | GPIO12 (D12) | Controle de som                        |
