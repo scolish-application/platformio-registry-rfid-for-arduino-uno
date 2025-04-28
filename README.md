@@ -1,16 +1,23 @@
-| Pino MFRC522    | Pino ESP32          | Descrição                             |
-|-----------------|---------------------|---------------------------------------|
-| **SDA** (SS)    | **GPIO5** (D5)      | Pino de seleção do escravo (Slave Select) |
-| **SCK**         | **GPIO18**          | Pino de relógio SPI (Clock)          |
-| **MISO**        | **GPIO19**          | Pino de entrada SPI (Master In Slave Out) |
-| **MOSI**        | **GPIO23**          | Pino de saída SPI (Master Out Slave In) |
-| **IRQ**         | **Não conectado**   | Não é necessário para este projeto   |
-| **GND**         | **GND**             | Pino de aterramento (Ground)         |
-| **RST**         | **GPIO22** (D22)    | Pino de Reset do MFRC522             |
-| **3.3V**        | **3V3**              | Pino de alimentação (3.3V)           |
+| Pino MFRC522 | Pino ESP32  | Função                                  |
+|:-------------|:------------|:----------------------------------------|
+| SDA (SS)     | GPIO5 (D5)   | Slave Select (SS)                       |
+| SCK          | GPIO18       | Serial Clock (SCK)                      |
+| MISO         | GPIO19       | Master In Slave Out (MISO)              |
+| MOSI         | GPIO23       | Master Out Slave In (MOSI)              |
+| IRQ          | Não conectado| Não é necessário para leitura normal   |
+| GND          | GND          | Terra (Ground)                         |
+| RST          | GPIO22 (D22) | Reset do leitor RFID                   |
+| 3.3V         | 3V3          | Alimentação (3.3V)                     |
 
+| Item            | Configuração       | Função                                  |
+|:----------------|:-------------------|:----------------------------------------|
+| Biblioteca Wi-Fi| `WiFi.h`            | Gerenciamento da conexão Wi-Fi         |
+| Biblioteca HTTP | `HTTPClient.h`      | Requisições HTTP para o servidor       |
+| SSID            | `your-SSID`         | Nome da rede Wi-Fi                     |
+| Password        | `your-PASSWORD`     | Senha da rede Wi-Fi                    |
+| Server URL      | `http://your-server.com/api` | Base para chamadas REST API  |
 
-| Pino Buzzer     | Pino ESP32          | Descrição                             |
-|-----------------|---------------------|---------------------------------------|
-| **Buzzer+**     | **GPIO12** (D12)    | Pino de controlo do buzzer           |
-| **Buzzer-**     | **GND**             | Pino de aterramento (Ground)         |
+| Pino Buzzer | Pino ESP32  | Função                                  |
+|:------------|:------------|:----------------------------------------|
+| Buzzer +    | GPIO12 (D12) | Controle de som                        |
+| Buzzer -    | GND          | Terra (Ground)                         |
